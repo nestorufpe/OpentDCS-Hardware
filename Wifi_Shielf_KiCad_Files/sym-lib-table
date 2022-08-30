@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name OpenBCI_Wifi_Shield-rescue)(type Legacy)(uri ${KIPRJMOD}/OpenBCI_Wifi_Shield-rescue.lib)(options "")(descr ""))
+  (lib (name OpenBCI_Wifi)(type Legacy)(uri ${KIPRJMOD}/OpenBCI_Wifi.lib)(options "")(descr ""))
+)

@@ -1,0 +1,12 @@
+Qty,partname,description,lib
+0,"AP2112","","OpenBCI"
+0,"C","Unpolarized capacitor","device"
+0,"CONN_01X02","Connector, single row, 01x02","conn"
+0,"CONN_01X04","Connector, single row, 01x04","conn"
+0,"CONN_01X08","Connector, single row, 01x08","conn"
+0,"ESP-12E","ESP8266 ESP-12E module, 22 pins, 2mm, PCB antenna","ESP8266"
+0,"LED","","device"
+0,"MBR120","","OpenBCI"
+0,"R","Resistor","device"
+0,"SPDT","Single Pole Double Throw (SPDT) switch","OpenBCI"
+0,"TACT_SWITCH","Button","OpenBCI"

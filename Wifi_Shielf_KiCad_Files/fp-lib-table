@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name OpenBCI_Wifi_Shield)(type KiCad)(uri "$(KIPRJMOD)/OpenBCI_Wifi_Shield.pretty")(options "")(descr ""))
+)
