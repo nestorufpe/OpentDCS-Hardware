@@ -4,11 +4,11 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "OpenBCI Wifi Shield"
+Title "OpentDCS  Shield"
 Date ""
 Rev "v1.0.0"
-Comp "Push The World LLC"
-Comment1 "AJ Keller"
+Comp "Master Eng. Biomedical - UFPE"
+Comment1 "Design by Nestor Cavalcante"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -292,8 +292,6 @@ F 3 "" H 5850 5550 50  0000 C CNN
 $EndComp
 NoConn ~ 7450 7050
 NoConn ~ 7350 7050
-NoConn ~ 7250 7050
-NoConn ~ 7150 7050
 NoConn ~ 7050 7050
 NoConn ~ 6950 7050
 $Comp
@@ -372,7 +370,6 @@ Text Label 10400 4500 2    60   ~ 0
 RXD
 Text Notes 10550 4850 2    60   ~ 0
 PROGRAMMING PINS
-NoConn ~ 8100 6150
 NoConn ~ 6300 6150
 NoConn ~ 6300 5950
 $Comp
@@ -835,7 +832,6 @@ NoConn ~ 12400 5150
 NoConn ~ 11650 4850
 NoConn ~ 11650 4950
 NoConn ~ 11650 5150
-NoConn ~ 7850 8550
 Text Label 11900 5950 2    60   ~ 0
 RESET
 Connection ~ 5700 5950
@@ -930,14 +926,150 @@ Wire Wire Line
 Wire Wire Line
 	5700 5950 5800 5950
 $Comp
-L RF_Module:ESP32-WROOM-32 U?
-U 1 1 630E56DC
-P 7250 9100
-F 0 "U?" H 7250 10681 50  0000 C CNN
-F 1 "ESP32-WROOM-32" H 7250 10590 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 7250 7600 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 6950 9150 50  0001 C CNN
-	1    7250 9100
+L REF200AU:REF200AU IC?
+U 1 1 6316B43A
+P 6650 8650
+F 0 "IC?" H 7650 8915 50  0000 C CNN
+F 1 "REF200AU" H 7650 8824 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 8500 8750 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ref200.pdf" H 8500 8650 50  0001 L CNN
+F 4 "Dual current source/currentsink,REF200AU" H 8500 8550 50  0001 L CNN "Description"
+F 5 "1.75" H 8500 8450 50  0001 L CNN "Height"
+F 6 "595-REF200AU" H 8500 8350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/REF200AU?qs=sSOk4GDDv7zLdlw8Kg8mrQ%3D%3D" H 8500 8250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 8500 8150 50  0001 L CNN "Manufacturer_Name"
+F 9 "REF200AU" H 8500 8050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6650 8650
 	1    0    0    -1  
 $EndComp
+$Comp
+L CD4066BE:CD4066BE IC?
+U 1 1 6316C4E8
+P 6750 9600
+F 0 "IC?" H 7700 9865 50  0000 C CNN
+F 1 "CD4066BE" H 7700 9774 50  0000 C CNN
+F 2 "DIP794W53P254L1930H508Q14N" H 8500 9700 50  0001 L CNN
+F 3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-SFU2/DSASFU100028824.pdf" H 8500 9600 50  0001 L CNN
+F 4 "CMOS Quad Bilateral Switch" H 8500 9500 50  0001 L CNN "Description"
+F 5 "5.08" H 8500 9400 50  0001 L CNN "Height"
+F 6 "595-CD4066BE" H 8500 9300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4066BE?qs=mTHRaKC2c7ObpofRtjqLig%3D%3D" H 8500 9200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 8500 9100 50  0001 L CNN "Manufacturer_Name"
+F 9 "CD4066BE" H 8500 9000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6750 9600
+	1    0    0    -1  
+$EndComp
+Text Label 6550 8750 2    60   ~ 0
+I2
+Text Label 6550 8650 2    60   ~ 0
+I1
+Text Label 6550 8850 2    60   ~ 0
+COMM
+Text Label 6550 8950 2    60   ~ 0
+9V
+Text Label 8700 8450 0    60   ~ 0
+9V
+Wire Wire Line
+	8650 8750 8700 8750
+Wire Wire Line
+	8700 8750 8700 8650
+Wire Wire Line
+	8650 8650 8700 8650
+Connection ~ 8700 8650
+Wire Wire Line
+	8700 8650 8700 8450
+NoConn ~ 8650 8850
+Text Label 8850 8950 0    60   ~ 0
+B_OUT
+Text Label 8750 9100 0    60   ~ 0
+C_OUT
+Wire Wire Line
+	8650 8950 8750 8950
+Wire Wire Line
+	8750 9100 8750 8950
+Connection ~ 8750 8950
+Wire Wire Line
+	8750 8950 8850 8950
+Wire Wire Line
+	6550 8650 6650 8650
+Wire Wire Line
+	6550 8750 6650 8750
+Wire Wire Line
+	6550 8850 6650 8850
+Wire Wire Line
+	6550 8950 6650 8950
+Text Label 6600 9600 2    60   ~ 0
+I1
+Text Label 6600 9700 2    60   ~ 0
+A_OUT
+Text Label 6600 9800 2    60   ~ 0
+I2
+Text Label 6600 9900 2    60   ~ 0
+B_OUT
+Text Label 6600 10000 2    60   ~ 0
+C_B
+Text Label 6600 10100 2    60   ~ 0
+C_C
+$Comp
+L power:GND #PWR?
+U 1 1 631942E9
+P 6600 10300
+F 0 "#PWR?" H 6600 10050 50  0001 C CNN
+F 1 "GND" H 6600 10150 50  0000 C CNN
+F 2 "" H 6600 10300 50  0000 C CNN
+F 3 "" H 6600 10300 50  0000 C CNN
+	1    6600 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 10200 6600 10200
+Wire Wire Line
+	6600 10200 6600 10300
+Wire Wire Line
+	6600 10100 6750 10100
+Wire Wire Line
+	6600 10000 6750 10000
+Wire Wire Line
+	6600 9900 6750 9900
+Wire Wire Line
+	6600 9800 6750 9800
+Wire Wire Line
+	6600 9700 6750 9700
+Wire Wire Line
+	6600 9600 6750 9600
+Text Label 8800 9600 0    60   ~ 0
+9V
+Wire Wire Line
+	8650 9600 8800 9600
+Text Label 8800 9700 0    60   ~ 0
+C_A
+Text Label 8800 10100 0    60   ~ 0
+I1
+Text Label 8800 10200 0    60   ~ 0
+C_OUT
+NoConn ~ 8650 10000
+NoConn ~ 8650 9900
+NoConn ~ 8650 9800
+Wire Wire Line
+	8650 9700 8800 9700
+Wire Wire Line
+	8650 10100 8800 10100
+Wire Wire Line
+	8650 10200 8800 10200
+Wire Notes Line
+	4500 8200 4500 10750
+Wire Notes Line
+	4500 10750 10800 10750
+Wire Notes Line
+	10800 10750 10800 8200
+Wire Notes Line
+	10800 8200 4500 8200
+Text Notes 9250 10650 0    60   ~ 0
+CURRENT SOURCE
+Text Label 7150 7050 3    60   ~ 0
+C_A
+Text Label 7250 7050 3    60   ~ 0
+C_B
+Text Label 8100 6150 0    60   ~ 0
+C_C
 $EndSCHEMATC
