@@ -1075,12 +1075,117 @@ C_C
 $Comp
 L Connector:Conn_01x05_Female J?
 U 1 1 631EBAD7
-P 4400 8550
-F 0 "J?" H 4292 8125 50  0000 C CNN
-F 1 "Conn_4x1_HDTDCS" H 4292 8216 50  0000 C CNN
-F 2 "" H 4400 8550 50  0001 C CNN
-F 3 "~" H 4400 8550 50  0001 C CNN
-	1    4400 8550
+P 4700 9150
+F 0 "J?" H 4592 8725 50  0000 C CNN
+F 1 "Conn_4x1_HDTDCS_Cathode(-)" H 4750 8800 50  0000 C CNN
+F 2 "" H 4700 9150 50  0001 C CNN
+F 3 "~" H 4700 9150 50  0001 C CNN
+	1    4700 9150
 	-1   0    0    1   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6317ABCD
+P 5100 9500
+F 0 "#PWR?" H 5100 9250 50  0001 C CNN
+F 1 "GND" H 5100 9350 50  0000 C CNN
+F 2 "" H 5100 9500 50  0000 C CNN
+F 3 "" H 5100 9500 50  0000 C CNN
+	1    5100 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 9350 5100 9350
+Wire Wire Line
+	5100 9350 5100 9500
+Text Label 5250 8750 0    60   ~ 0
+A_OUT
+Text Label 5250 9050 0    60   ~ 0
+COMM
+Wire Wire Line
+	5150 8900 5250 8900
+Wire Wire Line
+	5250 8900 5250 8750
+Wire Wire Line
+	5250 9050 5250 8900
+Connection ~ 5250 8900
+Wire Wire Line
+	5150 9250 5150 9150
+Connection ~ 5150 9150
+Wire Wire Line
+	5150 9150 5150 9050
+Connection ~ 5150 9050
+Wire Wire Line
+	5150 9050 5150 8950
+Connection ~ 5150 8950
+Wire Wire Line
+	5150 8950 5150 8900
+Wire Wire Line
+	4900 9250 5150 9250
+Wire Wire Line
+	4900 9150 5150 9150
+Wire Wire Line
+	4900 9050 5150 9050
+Wire Wire Line
+	4900 8950 5150 8950
+$Comp
+L Connector:Conn_01x05_Female J?
+U 1 1 632256B4
+P 4500 8050
+F 0 "J?" H 4300 7600 50  0000 C CNN
+F 1 "Conn_4x1_HDTDCS_Anode(+)" H 4300 7700 50  0000 C CNN
+F 2 "" H 4500 8050 50  0001 C CNN
+F 3 "~" H 4500 8050 50  0001 C CNN
+	1    4500 8050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 632256BA
+P 5100 7800
+F 0 "#PWR?" H 5100 7550 50  0001 C CNN
+F 1 "GND" H 5100 7650 50  0000 C CNN
+F 2 "" H 5100 7800 50  0000 C CNN
+F 3 "" H 5100 7800 50  0000 C CNN
+	1    5100 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 8250 4900 8250
+Wire Wire Line
+	4900 8250 4900 8400
+Text Label 5000 8250 0    60   ~ 0
+A_OUT
+Text Label 5000 8550 0    60   ~ 0
+COMM
+Wire Wire Line
+	4900 8400 5000 8400
+Wire Wire Line
+	5000 8400 5000 8250
+Wire Wire Line
+	5000 8550 5000 8400
+Connection ~ 5000 8400
+Wire Wire Line
+	4950 8150 4950 8050
+Connection ~ 4950 8050
+Wire Wire Line
+	4950 8050 4950 7950
+Connection ~ 4950 7950
+Wire Wire Line
+	4950 7950 4950 7850
+Connection ~ 4950 7850
+Wire Wire Line
+	4700 8150 4950 8150
+Wire Wire Line
+	4700 8050 4950 8050
+Wire Wire Line
+	4700 7950 4950 7950
+Wire Wire Line
+	4700 7850 4950 7850
+Wire Wire Line
+	4950 7750 5100 7750
+Wire Wire Line
+	5100 7750 5100 7800
+Wire Wire Line
+	4950 7750 4950 7850
 $EndSCHEMATC
