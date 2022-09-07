@@ -1,4 +1,4 @@
-update=8/30/2022 11:07:54 AM
+update=9/7/2022 9:16:28 AM
 version=1
 last_client=kicad
 [cvpcb]
@@ -22,7 +22,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=OpenBCI_Wifi_Shield_wroom32.net
+LastNetListRead=OpenBCI_Wifi_Shield_ref200.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0

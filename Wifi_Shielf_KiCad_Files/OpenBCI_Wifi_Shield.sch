@@ -888,7 +888,7 @@ F 3 "" H 11650 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 2300 7200 2300
+	6850 2300 7050 2300
 Wire Wire Line
 	8200 3550 8550 3550
 Wire Wire Line
@@ -966,9 +966,9 @@ I1
 Text Label 6000 7900 2    60   ~ 0
 COMM
 Text Label 6000 8000 2    60   ~ 0
-9V
+6V
 Text Label 8150 7500 0    60   ~ 0
-9V
+6V
 Wire Wire Line
 	8100 7800 8150 7800
 Wire Wire Line
@@ -1038,7 +1038,7 @@ Wire Wire Line
 Wire Wire Line
 	6050 8650 6200 8650
 Text Label 8250 8650 0    60   ~ 0
-9V
+6V
 Wire Wire Line
 	8100 8650 8250 8650
 Text Label 8250 8750 0    60   ~ 0
@@ -1078,7 +1078,7 @@ U 1 1 631EBAD7
 P 4700 9150
 F 0 "J?" H 4592 8725 50  0000 C CNN
 F 1 "Conn_4x1_HDTDCS_Cathode(-)" H 4750 8800 50  0000 C CNN
-F 2 "" H 4700 9150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4700 9150 50  0001 C CNN
 F 3 "~" H 4700 9150 50  0001 C CNN
 	1    4700 9150
 	-1   0    0    1   
@@ -1134,7 +1134,7 @@ U 1 1 632256B4
 P 4500 8050
 F 0 "J?" H 4300 7600 50  0000 C CNN
 F 1 "Conn_4x1_HDTDCS_Anode(+)" H 4300 7700 50  0000 C CNN
-F 2 "" H 4500 8050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4500 8050 50  0001 C CNN
 F 3 "~" H 4500 8050 50  0001 C CNN
 	1    4500 8050
 	-1   0    0    1   
@@ -1188,4 +1188,11 @@ Wire Wire Line
 	5100 7750 5100 7800
 Wire Wire Line
 	4950 7750 4950 7850
+Text Label 7050 2100 0    60   ~ 0
+6V
+Wire Wire Line
+	7050 2100 7050 2300
+Connection ~ 7050 2300
+Wire Wire Line
+	7050 2300 7200 2300
 $EndSCHEMATC
